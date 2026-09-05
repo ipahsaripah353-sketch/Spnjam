@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembatalan SPinjam - Customer Service Shopee</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 450px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #ee4d2d, #ff7337);
+            padding: 30px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .shopee-logo {
+            width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .shopee-logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px 25px;
+        }
+        .info-card {
+            background-color: #fff9f6;
+            border: 1px solid #ffe3d5;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+        .info-card h3 {
+            color: #ee4d2d;
+            font-size: 15px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .info-card p {
+            font-size: 13px;
+            color: #555555;
+            line-height: 1.5;
+        }
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #25d366;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            transform: translateY(-2px);
+        }
+        .btn-whatsapp svg {
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 11px;
+            color: #999999;
+            border-top: 1px solid #eeeeee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="shopee-logo">
+                <!-- Menggunakan logo resmi Shopee dari Wikimedia -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg" alt="Shopee Logo">
+            </div>
+            <h1>Bantuan Pembatalan</h1>
+            <p>Layanan Resmi Pengajuan Pembatalan SPinjam</p>
+        </div>
+        
+        <div class="content">
+            <div class="info-card">
+                <h3>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    Informasi Pembatalan Spinjam 
+                </h3>
+                <p>Proses pembatalan SPinjam akan di bantu Pengembalian tanpa bunga. Silakan hubungi Customer Service kami via WhatsApp untuk panduan dan penyelesaian instan.</p>
+            </div>
+            
+            <a href="https://wa.me/6285165611451?text=Halo%20Customer%20Service%2C%20saya%20ingin%20mengajukan%20pembatalan%20SPinjam%20saya.%20Mohon%20bantuannya." class="btn-whatsapp" target="_blank">
+                <svg viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.6.95 3.498 1.451 5.438 1.453 5.457 0 9.897-4.437 9.9-9.894.002-2.643-1.029-5.127-2.903-7.005C17.15 1.83 14.665.801 12.012.801c-5.46 0-9.899 4.438-9.9 9.895-.001 2.054.538 4.062 1.562 5.834L2.64 20.913l4.007-1.759zM17.13 15.35c-.276-.139-1.636-.807-1.89-.899-.253-.093-.438-.139-.623.139-.184.277-.714.899-.875 1.084-.162.184-.323.208-.599.069-.276-.138-1.168-.431-2.226-1.374-.823-.733-1.378-1.639-1.54-1.915-.162-.276-.017-.424.121-.561.124-.124.276-.323.415-.485.139-.161.184-.276.276-.461.093-.185.046-.347-.023-.485-.069-.139-.623-1.501-.853-2.053-.224-.539-.452-.465-.623-.474-.161-.008-.347-.01-.532-.01s-.485.069-.739.347c-.253.276-.969.947-.969 2.309 0 1.362.992 2.678 1.13 2.863.139.185 1.953 2.982 4.731 4.18.661.285 1.176.455 1.579.582.664.211 1.268.181 1.745.11.532-.079 1.636-.669 1.866-1.316.23-.647.23-1.201.161-1.316-.069-.115-.253-.185-.53-.324z"/>
+                </svg>
+                Hubungi cs di WhatsApp
+            </a>
+        </div>
+        
+        <div class="footer">
+            &copy; 2026 Shopee Care Team. Hak Cipta Dilindungi.
+        </div>
+    </div>
+
+</body>
+</html>
